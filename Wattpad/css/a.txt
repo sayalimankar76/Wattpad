@@ -1,0 +1,8 @@
+-webkit-tap-highlight-color: transparent;
+font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+font-weight: 400;
+line-height: 24px;
+color: #6f6f6f;
+-webkit-font-smoothing: antialiased;
+box-sizing: border-box;
+font-size: 15px;

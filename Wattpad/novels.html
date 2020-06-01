@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="text/css" href="img/www1.png">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: cursive;
+}
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: orange;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: white;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: orange;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 550px;
+  font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+.box1
+
+{
+  margin-left: 100px;
+  width:500px;
+  height: 300px;
+  margin-top: 50px; 
+  float: left;
+}
+.box1 img
+{
+  margin-top: 0px;
+  width: 190px;
+  height: 240px;
+  float: left;
+}
+.box1 a
+{
+  
+  margin-left: 30px;
+  margin-top: 40px;
+  color: black;
+
+}
+.box1 p
+
+{ font-size: 11px;
+  width: 250px;
+ margin-left: 220px;
+ color: grey;
+ font-family: system-ui;
+ 
+}
+
+.box1 #b1
+{
+  background-color:transparent;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 10px;
+  margin-left: 360px;
+  margin-top:-100px;
+  transition: 0.3s;
+
+}
+
+.box2
+{
+  margin-left: 620px;
+  width:600px;
+  height: 300px;
+  margin-top: 50px; 
+}
+.box2 img
+{
+  margin-top: 0px;
+  width: 190px;
+  height: 240px;
+}
+.box2 a
+{
+  float: right;
+  margin-right: -20px;
+  margin-top: 10px;
+  color: black;
+
+}
+.box2 p
+
+{ 
+  font-size: 11px;
+  width: 250px;
+ margin-left: 220px;
+ color: grey;
+ font-family: system-ui;
+ margin-top: -150px;
+ 
+}
+.box2 #b2
+{
+  background-color:transparent;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 10px;
+  margin-left: 360px;
+  margin-top:-50px;
+  transition: 0.3s;
+
+}
+#more {display: none;}
+.checked {
+  color: orange;
+}
+.footer
+
+{
+  margin-top: 50px;
+  width: 100%;
+  height: 100px;
+  
+} 
+.footer ul
+    {
+      display:inline-block;
+      list-style:none;
+      color:#1C2833 ;
+      margin-left: 100px;
+    
+      
+    }
+     .footer ul li
+      {
+        display: inline-block;
+        padding: 10px;
+    
+      }
+       .footer ul li a
+      { text-decoration:none;
+        color:black;
+        font-style: bold;
+        float: left;
+      }
+       .footer ul li:hover
+      {
+        background:none;
+        border-color: black;
+      }
+</style>
+</head>
+<body>
+
+
+  <div class="topnav">
+</div>
+</div>
+
+
+<div class="box1">
+  <img src="img/a.jpg">
+  <a href="C:\Users\Dell\Desktop\New folder\The Alchemist.html"><b>The Alchemist</b></a>
+  <p>by Paulo Coelho (Goodreads Author),<br> 
+  Alan R. Clarke (Translator),<br>
+   James Noel Smith (Illustrator)<br>
+ <span class="fa fa-star checked" style="margin-left:3px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+   Paulo Coelho's enchanting novel has inspired a devoted following around the world. This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids.<span id="dots">...</span><span id="more">No one knows what the treasure is, or if Santiago will be able to surmount the obstacles in his path. But what starts out as a journey to find worldly goods turns into a discovery of the treasure found within. Lush, evocative, and deeply humane, the story of Santiago is an eternal testament to the transforming power of our dreams and the importance of listening to our hearts.</span></p><button onclick="myFunction()" id="b1">Read more</button><br>
+
+</div>
+<div class="box2">
+  <img src="img/art.png">
+  <a href="#"><b>The Subtle Art of Not giving f*ck:<br>A Counterintuitive approach to Living a Good Life</b></a>
+  <p style="margin-top: -180px;">by Mark Manson (Goodreads Author)<br>
+ <span class="fa fa-star checked" style="margin-left: -5px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+  In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be "positive" all the time so that we can truly become better, happier people.For decades, we’ve been told that positive thinking is the key to a happy, rich life. "F**k positivity," Mark Manson says. "Let’s be honest, shit is f**ked and we have to live with it." In his wildly popular Internet blog, Manson doesn’t sugarcoat or equivocate.<span id="dots">...</span><span id="more"> He tells it like it is—a dose of raw, refreshing, honest truth that is sorely lacking today<i>The Subtle Art of Not Giving a F**k</i> is his antidote to the coddling, let’s-all-feel-good mindset that has infected American society and spoiled a generation, rewarding them with gold medals just for showing up.</span></p><button onclick="myFunction()" id="b2">Read more</button><br>
+
+</p>
+  
+</div>
+<div class="box1">
+  <img src="img/monk.jpg">
+  <a href="C:\Users\Dell\Desktop\New folder\novels\The-Alchemist-by-Paulo-Coelho.pdf"><b>The Monk who sold his Ferrari</b></a>
+  <p>by Robin Sharma<br>
+ <span class="fa fa-star checked" style="margin-left:3px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+  This inspiring tale provides a step-by-step approach to living with greater courage, balance, abundance, and joy. A wonderfully crafted fable, The Monk Who Sold His Ferrari tells the extraordinary story of Julian Mantle, a lawyer forced to confront the spiritual crisis of his out-of-balance life. On a life-changing odyssey <span id="dots">...</span><span id="more">to an ancient culture, he discovers powerful, wise, and practical lessons that teach us to:
+  Develop Joyful Thoughts, Follow Our Life's Mission and Calling, Cultivate Self-Discipline and Act Courageously, Value Time as Our Most Important Commodity, Nourish Our Relationships, and Live Fully, One Day at a Time.</span></p><button onclick="myFunction()" id="b1">Read more</button><br>
+
+</div>
+<div class="box2">
+  <img src="img/apj.jpg">
+  <a href="#" style="margin-right:140px;"><b>Wings of Fire:An Autobiography <br>by A.P.J. Abdul Kalam</b></a>
+  <p style="margin-top: -200px;">Arun Tiwari (Contributor)<br>
+<span class="fa fa-star checked" style="margin-left: -5px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+  Avul Pakir Jainulabdeen Abdul Kalam, the son of a little-educated boat-owner in Rameswaram, Tamil Nadu, had an unparalleled career as a defence scientist, culminating in the highest civilian award of India, the Bharat Ratna. As chief of the country's defence research and development programme, Kalam demonstrated the great potential for dynamism and innovation that existed in seemingly moribund research establishments. This is the story of Kalam's rise from obscurity and his personal<span id="dots">...</span><span id="more"> and professional struggles, as well as the story of Agni, Prithvi, Akash, Trishul and Nag-missiles that have become household names in India and that have raised the nation to the level of a missile power of international reckoning. This is also the saga of independent India's struggle for technological self-sufficiency and defensive autonomy-a story as much about politics, domestic and international, as it is about science.</span></p><button onclick="myFunction()" id="b2">Read more</button><br>
+</p>
+  
+</div>
+<div class="box1">
+  <img src="img/meluha.jpg">
+  <a href="C:\Users\Dell\Desktop\New folder\novels\The-Alchemist-by-Paulo-Coelho.pdf"><b>The Immortals Of Meluha</b></a>
+  <p>(Shiva Trilogy #1)<br>
+    by Amish Tripathi (Goodreads Author)<br>
+     <span class="fa fa-star checked" style="margin-left:3px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+  1900 BC. In what modern Indians mistakenly call the Indus Valley Civilisation. The inhabitants of that period called it the land of Meluha a near perfect empire created many centuries earlier by Lord Ram, one of the greatest monarchs that ever lived. This once proud empire and its Suryavanshi rulers face severe perils as its primary river, the revered Saraswati, is slowly drying to extinction. They also face devastating terrorist attacks from the east, the land of the Chandravanshis.<span id="dots">...</span><span id="more">To make matters worse, the Chandravanshis appear to have allied with the Nagas, an ostracised and sinister race of deformed humans with astonishing martial skills!
+The only hope for the Suryavanshis is an ancient legend: When evil reaches epic proportions, when all seems lost, when it appears that your enemies have triumphed, a hero will emerge.Is the rough-hewn Tibetan immigrant Shiva, really that hero? And does he want to be that hero at all? Drawn suddenly to his destiny, by duty as well as by love, will Shiva lead the Suryavanshi vengeance and destroy evil?</span></p><button onclick="myFunction()" id="b1">Read more</button><br>
+
+</div>
+<div class="box2">
+  <img src="img/nagas.jpg">
+  <a href="#" style="margin-right: 200px;"><b>The Secret of Nagas</b></a>
+  <p style="margin-top: -220px">(Shiva Trilogy #2)<br>
+     <span class="fa fa-star checked" style="margin-left: -5px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+    by Amish Tripathi (Goodreads Author)<br>Today, He is a God.4000 years ago, He was just a man.
+  The hunt is on. The sinister Naga warrior has killed his friend Brahaspati and now stalks his wife Sati. Shiva, the Tibetan immigrant who is the prophesied destroyer of evil, will not rest till he finds his demonic adversary. His vengeance and the path to evil will lead him to the door of the Nagas, the serpent people.<span id="dots">...</span><span id="more">Of that he is certain.The evidence of the malevolent rise of evil is everywhere. A kingdom is dying as it is held to ransom for a miracle drug. A crown prince is murdered. The Vasudevs Shivas philosopher guides betray his unquestioning faith as they take the aid of the dark side. Even the perfect empire, Meluha is riddled with a terrible secret in Maika, the city of births. Unknown to Shiva, a master puppeteer is playing a grand game. .</span></p><button onclick="myFunction()" id="b2">Read more</button><br>
+</p>
+  
+</div>
+<div class="box1">
+  <img src="img/oath.jpg">
+  <a href="C:\Users\Dell\Desktop\New folder\novels\The-Alchemist-by-Paulo-Coelho.pdf"><b>The Oath of Vayuputras</b></a>
+  <p>(Shiva Trilogy #3)<br>
+    by Amish Tripathi (Goodreads Author)<br>
+     <span class="fa fa-star checked" style="margin-left:3px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+  ONLY A GOD CAN STOP IT.
+Shiva is gathering his forces. He reaches the Naga capital, Panchavati, and Evil is finally revealed. The Neelkanth prepares for a holy war against his true enemy, a man whose name instils dread in the fiercest of warriors.India convulses under the onslaught of a series of brutal battles. It's a war for the very soul of the nation.<span id="dots">...</span><span id="more">Many will die. But Shiva must not fail, no matter what the cost. In his desperation, he reaches out to the ones who have never offered any help to him: the Vayuputras.Will he succeed? And what will be the real cost of battling Evil? To India? And to Shiva's soul?
+Discover the answer to these mysteries in this concluding part of the bestselling Shiva Trilogy.</span></p><button onclick="myFunction()" id="b1">Read more</button>
+
+</div>
+<div class="box2">
+  <img src="img/truth.jpg">
+  <a href="#" style="margin-right: 100px;"><b>My Experiments with Truth:<br>An Autobigraphy of Mahatma Gandhi</b></a>
+  <p style="margin-top: -180px;">by Mark Manson (Goodreads Author)<br>
+     <span class="fa fa-star checked" style="margin-left: -5px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+"It is not my purpose to attempt a real autobiography. I simply want to tell the story of my numerous experiments with truth, and as my life consists of nothing but those experiments, it is true that the story will take the shape of an autobiography."The Story of My Experiments with Truth, the autobiography of Mahatma Gandhi, is a very popular and influential book.
+ .<span id="dots">...</span><span id="more"> </span></p><button onclick="myFunction()" id="b2">Read more</button><br>
+
+</p>
+  
+</div>
+<div class="box1">
+  <img src="img/b1.jpg">
+  <a href="#"><b>Einstein:His life and Universe</b></a>
+  <p>by Walter Isaacson (Goodreads Author)<br> 
+    <span class="fa fa-star checked" style="margin-left:3px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+ Einstein was a rebel and nonconformist from boyhood days, and these character traits drove both his life and his science. In this narrative, Walter Isaacson explains how his mind worked and the mysteries of the universe that he discovered.
+</div>
+<div class="box2">
+  <img src="img/b2.jpg">
+  <a href="#" style="margin-right:200px;"><b>The Fault in Our stars</b></a>
+  <p style="margin-top: -200px;">by John Green (Goodreads Author)<br>
+     <span class="fa fa-star checked" style="margin-left: -5px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+  Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final chapter inscribed upon diagnosis. But when a gorgeous plot twist named Augustus Waters suddenly appears at Cancer Kid Support Group, Hazel's story is about to be completely rewritten.<span id="dots">...</span><span id="more">Insightful, bold, irreverent, and raw, The Fault in Our Stars is award-winning author John Green's most ambitious and heartbreaking work yet, brilliantly exploring the funny, thrilling, and tragic business of being alive and in love.</span></p><button onclick="myFunction()" id="b2">Read more</button><br>
+
+</p>
+  
+</div>
+<div class="box1">
+  <img src="img/b3.jpg">
+  <a href=""><b>Pride and Prejudice</b></a>
+  <p>by Jane Austen, Anna Quindlen (Introduction)<br>
+    <span class="fa fa-star checked" style="margin-left:3px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+Since its immediate success in 1813, Pride and Prejudice has remained one of the most popular novels in the English language. Jane Austen called this brilliant work "her own darling child" and its vivacious heroine, Elizabeth Bennet, "as delightful a creature as ever appeared in print." The romantic clash between the opinionated Elizabeth and her proud beau, Mr. Darcy, is a splendid performance of civilized sparring. And<span id="dots">...</span><span id="more">Jane Austen's radiant wit sparkles as her characters dance a delicate quadrille of flirtation and intrigue, making this book the most superb comedy of manners of Regency England. </span></p><button onclick="myFunction()" id="b1">Read more</button><br>
+
+</div>
+<div class="box2">
+  <img src="img/b4.jpg">
+  <a href="#" style="margin-right: 220px;"><b>To Kill a Mockingbird</b></a>
+  <p style="margin-top: -200px;">by Harper Lee<br>
+     <span class="fa fa-star checked" style="margin-left: -5px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+  The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.Compassionate, dramatic, and deeply moving, To Kill A Mockingbird takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos.<span id="dots">...</span><span id="more"> Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature. </span></p><button onclick="myFunction()" id="b2">Read more</button><br>
+</p>
+  
+</div>
+<div class="box1">
+  <img src="img/b5.jpg">
+  <a href="#"><b>Revolution 2020</b></a>
+  <p>by Chetan Bhagat<br> 
+    <span class="fa fa-star checked" style="margin-left:3px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+  Book Summary of Revolution 2020 Once upon a time, in small-town India, there lived two intelligent boys. One wanted to use his intelligence to make money. One wanted to use his intelligence to create a revolution. The problem was, they both loved the same girl. Welcome to Revolution 2020. A story about childhood friends Gopal, Raghav and Aarti who struggle to find success and love in Varanasi. However, it isn't easy to achieve this in an unfair society that rewards the corrupt<span id="dots">...</span><span id="more"></span></p><button onclick="myFunction()" id="b1">Read more</button><br>
+
+
+</div>
+<div class="box2">
+  <img src="img/b6.jpg">
+  <a href="#" style="margin-right: 180px;"><b>The Magic of Thinking Big</b></a>
+  <p style="margin-top: -210px;">by David J. Schwartz<br>
+     <span class="fa fa-star checked" style="margin-left: -5px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+  The Magic of Thinking Big gives you useful methods, not empty promises. Dr. Schwartz presents a carefully designed program for getting the most out of your job, your marriage and family life, and your community. He proves that you don't need to be an intellectual or have innate talent to attain great success and satisfaction, but you do need to learn and understand the habit of thinking and behaving in ways that will get you there<br>
+
+</p>
+  
+</div>
+<div class="box1">
+  <img src="img/b7.jpg">
+  <a href="#"><b>Rich Dad, Poor Dad</b></a>
+  <p>by Robert T. Kiyosaki, Sharon Lechter<br> 
+ 
+    <span class="fa fa-star checked" style="margin-left:3px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+ Rich Dad Poor Dad is Robert's story of growing up with two dads — his real father and the father of his best friend, his "rich dad" — and the ways in which both men shaped his thoughts about money and investing. The book explodes the myth that you need to earn a high income to be rich and explains the difference between working for money and having your money work for you.
+
+</div>
+<div class="box2">
+  <img src="img/b8.jpg">
+  <a href="#" style="margin-right: 210px;"><b>Think and Grow Rich</b></a>
+  <p style="margin-top: -200px;">by Napoleon Hill,<br>
+    Ben Holden-Crowther (Goodreads Author)<br>
+     <span class="fa fa-star checked" style="margin-left: -5px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+ This is the original 1937 version of Napoleon Hill's Classic Book: Think and Grow Rich. To the greatest extent possible, the text and formatting have been kept exactly the same as in the original release with the exception of some minor formatting changes.
+
+</p>
+  
+</div>
+<div class="box1">
+  <img src="img/b9.jpg">
+  <a href="#"><b>How to Win Friends and Influence People</b></a>
+  <p>by Dale Carnegie<br> 
+
+    <span class="fa fa-star checked" style="margin-left:3px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+You can go after the job you want...and get it! You can take the job you have...and improve it! You can take any situation you're in...and make it work for you!
+Since its release in 1936, How to Win Friends and Influence People has sold more than 15 million copies. Dale Carnegie's first book is a timeless bestseller, packed with rock-solid advice that has carried thousands of now famous people up the ladder of success in their business and personal lives.
+
+
+</div>
+<div class="box2">
+  <img src="img/b10.jpg">
+  <a href="#" style="margin-right: 170px"><b>The 3 Mistakes of My Life</b></a>
+  <p style="margin-top: -200px;">by Chetan Bhagat<br>
+     <span class="fa fa-star checked" style="margin-left: -5px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+ In late-2000, a young boy in Ahmedabad called Govind dreamt of having a business. To accomodate his friends Ish and Omi's passion, they open a cricket shop. Govind's wants to make money and thinks big. Ish is all about nurturing Ali, the batsman with a rare gift. Omi knows his limited capabiltiies and just wants to be with his friends. However, nothing comes easy<span id="dots">...</span><span id="more"> in a turbulent city. To realize their goals, they will have to face it all - religious politics, earthquakes, riots, unacceptable love and above all, their own mistakes. Will they make it? Can an individual's dreams overcome the nightmares offered by real life? Can we succeed despite a few mistakes?</span></p><button onclick="myFunction()" id="b2">Read more</button><br>
+
+</p>
+  
+</div>
+<div class="box1">
+  <img src="img/five.jpg">
+  <a href="#"><b>Five Point Someone</b></a>
+  <p>by Chetan Bhagat<br> 
+ <span class="fa fa-star checked" style="margin-left:3px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+  Five Point Someone is a story about three friends in IIT who are unable to cope.The book starts with a disclaimer, “This is not a book to teach you how to get into IIT or even how to live in college. In fact, it describes how screwed up things can get if you don’t think straight.”Three hostelmates – Alok, Hari and Ryan get off to a bad start in IIT – they screw up the first class quiz. And while they try to make amends, things only get worse. It takes them a while to realize: If you try and screw with the IIT system, it comes back to double screw you. <span id="dots">...</span><span id="more">Before they know it, they are at the lowest echelons of IIT society. They have a five-point-something GPA out of ten, ranking near the end of their class. This GPA is a tattoo that will remain with them, and come in the way of anything else that matters – their friendship, their future, their love life. While the world expects IITians to conquer the world, these guys are struggling to survive.</span></p><button onclick="myFunction()" id="b1">Read more</button>
+
+
+</div>
+<div class="box2">
+  <img src="img/secret.jpg">
+  <a href="#" style="margin-right: 300px;"><b>The Secret</b></a>
+  <p style="margin-top: -200px;">by Rhonda Byrne<br>
+     <span class="fa fa-star checked" style="margin-left: -5px;"></span>
+<span class="fa fa-star checked" style="margin-top: -30px"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><span style="color: grey; font-size:11px; padding: 3px;">Ratings</span><br>
+  The Secret’s 10th Anniversary Edition includes a new foreword by Rhonda Byrne, and 10 of the most life-changing insights she’s had over the last 10 years of practicing and living The Secret every day. The 10 insights alone will accelerate your understanding and mastery of the law of attraction.
+</p>
+  
+</div><div class="footer" role="navigation" aria-label="Footer Links">
+  <ul>
+<li><a href="/paidstories" aria-label="Paid Stories"><b>Paid Stories</b></a></li>
+<li><a class="on-premium" href="/premium" aria-label="Try Premium"><b>AboutUs</b></a></li>
+<li><a href="/getmobile" aria-label="Get the App"><b>Get the App</b></a></li>
+<li><a href="/settings/language?jq=true" class="on-language" rel="nofollow" aria-label="Language"><b>Language</b></a></li>
+<li><a href="/writers" aria-label="Writers"><b>Writers</b></a></li>
+<li><a href=""><b>|</b></a></li>
+<li><a href="http://business.wattpad.com" aria-label="Business" ><b>Business</b></a></li>
+<li><a href="https://company.wattpad.com/work-at-wattpad" aria-label="Jobs"><b>Jobs</b></a></li>
+<li><a href="https://company.wattpad.com/press" aria-label="Press"><b>contact</b></a></li>
+<li style="margin-left: 30px"><a href="/terms" rel="nofollow" aria-label="Terms" style="color: #909497 "><b>Terms</b></a></li>
+<li><a href="/privacy" rel="nofollow" aria-label="Privacy" style="color: #909497 "><b>Privacy</b></a></li>
+<li><a href="https://support.wattpad.com" aria-label="Help" style="color: #909497 "><b>Help</b></a></li>
+<li><a href="" style="color: #BDC3C7 "><b>&copy; 2020 Wattpad</b></a></li>
+</ul>
+</div>
+<script>
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("b1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<script>
+ 
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("b2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+  </script>
+</body>
+</html>

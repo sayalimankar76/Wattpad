@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wattpad</title>
+	<link rel="stylesheet" type="text/css" href="css/homepage.css">
+	<link rel="stylesheet" type="text/css" href="New folder/login.html">
+	<link rel="icon" type="text/css" href="img/www1.png">
+	<style> 
+    
+    /*assign full width inputs*/ 
+    input[type=text], 
+    input[type=password]
+     { 
+        width: 100%; 
+        padding: 12px 20px; 
+        margin: 8px 0; 
+        display: inline-block; 
+        border: 1px solid #ccc; 
+        box-sizing: border-box; 
+    } 
+    
+    /*set a style for the buttons*/ 
+    button { 
+        background-color:orange; 
+        color: white; 
+        padding: 14px 20px; 
+        margin: 8px 0; 
+        border: none; 
+        cursor: pointer; 
+        width: 100%; 
+    } 
+    
+    /* set a hover effect for the button*/ 
+    button:hover { 
+        opacity: 0.8; 
+    } 
+    
+    /*set extra style for the cancel button*/ 
+    .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px; 
+        background-color: orange; 
+    } 
+    
+    /*centre the display image inside the container*/ 
+    .imgcontainer { 
+        text-align: center; 
+        margin: 24px 0 12px 0; 
+        position: relative; 
+    } 
+    
+    /*set image properties*/ 
+    img.avatar { 
+        width: 40%; 
+        border-radius: 20px;
+        margin-top: 10px;
+    } 
+    
+    /*set padding to the container*/ 
+    .container { 
+        padding: 16px; 
+    } 
+      
+    /*set the forgot password text*/ 
+    span.psw { 
+        float: right; 
+        padding-top: 16px; 
+        background-color: orange;
+    } 
+    
+    /*set the Modal background*/ 
+    .modal { 
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        left: 0; 
+        top: 0; 
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0, 0, 0); 
+        background-color: rgba(0, 0, 0, 0.4); 
+        padding-top: 60px; 
+    } 
+    
+    /*style the model content box*/ 
+    .modal-content { 
+        background-color: orange; 
+        margin: 8% auto 15% auto; 
+        border: 1px solid #888; 
+        width: 450px;
+        height: 400px; 
+    } 
+    
+    /*style the close button*/ 
+    .close { 
+        position: absolute; 
+        right: 25px; 
+        top: 0; 
+        color: #000; 
+        font-size: 35px; 
+        font-weight: bold; 
+    } 
+      
+    .close:hover, 
+    .close:focus { 
+        color: white; 
+        cursor: pointer; 
+    } 
+    
+    /* add zoom animation*/ 
+    .animate { 
+        -webkit-animation: animatezoom 0.6s; 
+        animation: animatezoom 0.6s 
+    } 
+      
+    @-webkit-keyframes animatezoom { 
+        from { 
+            -webkit-transform: scale(0) 
+        } 
+        to { 
+            -webkit-transform: scale(1) 
+        } 
+    } 
+      
+    @keyframes animatezoom { 
+        from { 
+            transform: scale(0) 
+        } 
+        to { 
+            transform: scale(1) 
+        } 
+    } 
+      
+    @media screen and (max-width: 300px) { 
+        span.psw { 
+            display: block; 
+            float: none; 
+            background-color: orange;
+        } 
+        .cancelbtn { 
+            width: 100%;
+    
+
+        } 
+    } 
+    body{background:url(yoga1.jpeg);
+	background-size:cover;
+	background-position:center;
+	font-family:san-serif;}
+	
+.loginbox{
+	background-color:orange;
+	color:white;
+	width:500px;
+	height:600px;
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	box-sizing:border-box;
+	margin:80;
+	padding:30px;}
+	
+h1{
+	text-align:center;
+	font-size:22px;
+	margin:0;}
+	
+.loginbox input{
+	width:100%;
+	margin-bottom:10px;
+	}
+
+.loginbox input[type="text"],input[type="password"]{
+	border:none;
+	background:orange;
+	outline:none;
+	border-bottom:1px solid white;
+	color:white;
+	font-size:15px;
+	height:30px;
+	}
+		
+.loginbox input[type="submit"]{
+	border:none;
+	outline:none;
+	font-size:18px;
+	background-color:orange;
+	color:white;
+	border-radius:20px;
+	height:35px;}
+	
+.loginbox p{
+	font-size:10px;}
+	
+.loginbox input[type="submit"]:hover{
+	cursor:pointer;
+	background:orange;
+	color:black;}
+
+.loginbox a{
+	font-size:12;
+	color:white;
+	text-decoration:none;}
+	
+.loginbox a:hover{
+	cursor:pointer;
+	background:orange;
+	color:black;}
+
+.box2 img
+{ margin-right : 5px;
+  margin-top: -400px;
+  width: 700px;
+  height: 600px;
+  display: block;
+
+
+}
+.box4 img
+{
+	display: block;
+	margin-top: 100px;
+}
+
+#container
+{
+    margin-left: 150px;
+    margin-top: 10px;
+    width: 1080px;
+    overflow: hidden;
+}
+#sliderbox{
+    position: relative;
+    width: 5500px;
+    animation-name: slideranimation;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+
+
+}
+/*horizontal*/
+#sliderbox img
+{
+    float: left;
+}
+
+@keyframes slideranimation{
+    0%{
+        left:0px;
+    }
+    20% /*4 second*/
+    {
+        left:0px;
+    }
+    25% /* 5 second*/ 
+    {
+        left:-1100px;
+    }
+    45% /* 9 second */
+    {
+        left: -1090px;
+    }
+    50% /* 10 second */
+    {
+        left:-2180px;
+    }
+    70% 
+    {
+        left:-2180px;
+    }
+    75%
+    {
+        left:-3270px;
+    }
+
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+    margin-top: 80px;
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row .column img
+{
+    max-width: 100%;
+    transition: transform 2s;
+}
+.row .column img:hover
+{
+    transform: scale(1.2);
+}
+
+.box1
+{
+    box-sizing: inherit;
+    width: 100%;
+    height: 110px;
+    background-color:white;
+    display: block;
+
+}
+.box1 img
+{
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 100px;
+    float: left;
+}
+.box1 ul
+        {
+            display:inline-flex;
+            list-style:none;
+            border-radius:15px;
+            color:black;
+            margin-top: 30px;
+            
+        }
+         .box1 ul li
+            {
+                display: block;
+                padding: 20px;
+        
+            }
+             ul li a
+            {   text-decoration:none;
+                color:black;
+                font-family: arial;
+                font-size: 15px;
+            }
+             ul li:hover
+            {
+                background:none;
+                border-radius:8px;
+                border-color: black;
+            }
+              .sub-menu
+            {
+                display:none;
+
+            }   
+            ul li:hover .sub-menu
+            {
+                display:block;
+                position:absolute;
+                margin-top:15px;
+                margin-left:-15px;
+                background:white;
+
+                
+            }
+             ul li:hover .sub-menu ul
+            {
+                width: 500px;
+                height: auto;
+                display:block;
+                margin:10px;
+                background:white;
+                color: black;
+                border-color: black;
+                float: left;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+.box3
+{
+    margin-top: 100px;
+    display: block;
+    width: 800px;
+    margin-left: 100px;
+    height:400px;
+
+
+}
+.footer
+
+{
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    
+} 
+.footer ul
+        {
+            display:inline-block;
+            list-style:none;
+            color:#1C2833 ;
+            margin-left: 100px;
+        
+            
+        }
+         .footer ul li
+            {
+                display: inline-block;
+                padding: 10px;
+        
+            }
+             .footer ul li a
+            {   text-decoration:none;
+                color:black;
+                font-style: bold;
+                float: left;
+            }
+             .footer ul li:hover
+            {
+                background:none;
+                border-color: black;
+            }
+			
+			.footer pre{
+			text-align:center;
+			font-size:13px;
+			}
+			
+			.footer p{
+			text-align:center;}
+
+	
+</style> 
+</head>
+<body>
+	<div class="box1">
+		<img src="img/logo.png">
+		<ul>
+		<li ><a href="homepage.html"><b>Home</b></a></li>
+		<li><a href="#"> <b>Browse</b><i class="fa fa-bars"></i></a>
+			<div class="sub-menu" style="border-radius: 5%;">
+			
+			<ul>
+				<li><a href="page.html"><b>Author</b></a><a href="action.html" style="margin:50px;"><b>Action</b></a> 
+				<a href="horror.html"><b>Horror</b></a><a href="drama.html" style="margin: 50px;"><b>Drama</b></a></li>
+
+				 <li><a href="mystery.html"><b>Mystery</b></a><a href="thriller.html" style="margin: 50px;"><b>thriller</b></a><a href="Adventure.html"><b>Adventure</b></a><a href="romance.html" style="margin: 50px;"><b>Romance</b></a></li>
+
+				<li><a href="horror11.html"><b>horror</b></a><a href="paranormal.html" style="margin:50px"><b>Paranormal</b></a><a href="poetry.html"><b>Poetry</b></a><a href="motivational11.html" style="margin: 50px"><b>Motivational</b></a></li>
+			</ul>
+				<li ><a href="contact.html"><b>ContactUs</b><i class="fa fa-home"></i></a></li>
+				<li ><a href="Lib.html"><b>Library</b><i class="fa fa-home"></i></a></li>
+                <li ><a href="login.html" style="margin-left: 400px;"><b>Login</b><i class="fa fa-home"></i></a></li>
+                <li ><a href="signup.html"><b>SignUp</b><i class="fa fa-home"></i></a></li>
+		
+  </div>
+    <script> 
+        var modal = document.getElementById('id01'); 
+        window.onclick = function(event) { 
+            if (event.target == modal) { 
+                modal.style.display = "none"; 
+            } 
+        } 
+        var modal = document.getElementById('id02'); 
+        window.onclick = function(event) { 
+            if (event.target == modal) { 
+                modal.style.display = "none"; 
+            } 
+        } 
+    </script> 
+				</div>
+		</div>
+        <div class="container1">
+            <a href="#"><img src="img/d1.png"></a>
+                <a href="#"><img src="img/d2.png"></a>
+            <a href="#"><img src="img/d3.png" style="margin-top: -4px;margin-left: 4px;"></a>
+        </div>
+         <div id="container">
+    <div id="sliderbox">
+   <a href="novel1.html"><img src="img/s1.png">
+    <a href="novel2.html"><img src="img/s2.png"></a>
+    <a href="novel3.html"><img src="img/s3.png"></a>
+    <a href="novel4.html"><img src="img/s4.png"></a>
+    <a href="novel5.html"><img src="img/s5.png"></a>
+    </div>
+    </div>
+    <div class="row">
+  <div class="column">
+    <a href=""><img src="img/b1.png" alt="" style="width:100%;height: 500px;" ></a>
+  </div>
+  <div class="column">
+    <a href=""><img src="img/b2.png" alt="" style="width:100%;height: 500px;"></a>
+  </div>
+  <div class="column">
+    <a href=""><img src="img/b3.png" alt="" style="width:100%;height: 500px;"></a>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <a href=""><img src="img/c1.png" alt="" style="width:100%;height: 500px;" ></a>
+  </div>
+  <div class="column">
+    <a href=""><img src="img/c2.png" alt="" style="width:100%;height: 500px;"></a>
+  </div>
+  <div class="column">
+    <a href=""><img src="img/c3.png" alt="" style="width:100%;height: 500px;"></a>
+  </div>
+</div>
+       
+		<div class="box2" style="margin-top: 0px;
+		width: 100%; height: 600px;">
+		<img src="img/image1.png" style="width: 100%; height: 600px;">
+			
+		</div>
+
+	<div class="box3">
+			<img src="img/watt.png">
+	</div>	
+<div class="footer" role="navigation" aria-label="Footer Links">
+	<ul>
+<li><a href="/paidstories" aria-label="Paid Stories"><b>Paid Stories</b></a></li>
+<li><a class="on-premium" href="/premium" aria-label="Try Premium"><b>AboutUs</b></a></li>
+<li><a href="/getmobile" aria-label="Get the App"><b>Get the App</b></a></li>
+<li><a href="/settings/language?jq=true" class="on-language" rel="nofollow" aria-label="Language"><b>Language</b></a></li>
+<li><a href="/writers" aria-label="Writers"><b>Writers</b></a></li>
+<li><a href=""><b>|</b></a></li>
+<li><a href="http://business.wattpad.com" aria-label="Business" ><b>Business</b></a></li>
+<li><a href="https://company.wattpad.com/work-at-wattpad" aria-label="Jobs"><b>Jobs</b></a></li>
+<li><a href="https://company.wattpad.com/press" aria-label="Press"><b>contact</b></a></li>
+<li style="margin-left: 30px"><a href="/terms" rel="nofollow" aria-label="Terms" style="color: #909497 "><b>Terms</b></a></li>
+<li><a href="/privacy" rel="nofollow" aria-label="Privacy" style="color: #909497 "><b>Privacy</b></a></li>
+<li><a href="https://support.wattpad.com" aria-label="Help" style="color: #909497 "><b>Help</b></a></li>
+<li><a href="" style="color: #BDC3C7 "><b>&copy; 2020 Wattpad</b></a></li>
+</ul>
+<p style="font-size:15px"><b>Designed by</b></p>
+<pre><b>Aditi Gudadhe, Sayali Mankar, Shubham Naik</b></pre>
+
+</div>
+</body>
+</html>
